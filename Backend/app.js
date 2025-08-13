@@ -28,4 +28,8 @@ dbConnection();
 
 app.use(errorMiddleware);
 
+app.get("/", (req, res) => {
+    res.send("✅ Backend is running successfully!");
+});
+
 export default app;
