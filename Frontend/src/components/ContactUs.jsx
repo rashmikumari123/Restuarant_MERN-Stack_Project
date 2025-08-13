@@ -10,7 +10,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:4000/api/v1/contact/send", {
+      const response = await axios.post("https://restuarant-mern-stack-project.onrender.com/api/v1/contact/send", {
         name,
         email,
         message,
@@ -25,7 +25,7 @@ const ContactUs = () => {
     }
   };
 
-  return (
+  return ( 
     <section className="contact-us" id="contact-us">
       <div className="container">
         <div className="heading-section">
